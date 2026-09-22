@@ -1,0 +1,907 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+
+    <meta charset="UTF-8">
+
+
+    <!-- Responsive Website -->
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Browser Tab Title -->
+
+    <title>Track Order | FoodGo</title>
+
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+                    HEADER
+    ========================================= -->
+
+    <header>
+
+        <nav>
+
+
+            <!-- Website Logo -->
+
+            <h2>
+
+                <a href="index.html">
+                    FoodGo
+                </a>
+
+            </h2>
+
+
+            <!-- Main Navigation -->
+
+            <ul>
+
+                <li>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="restaurants.html">
+                        Restaurants
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="menu.html">
+                        Menu
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="cart.html">
+                        Cart
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- Login -->
+
+            <a href="login.html">
+                Login
+            </a>
+
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ========================================
+                    MAIN CONTENT
+    ========================================= -->
+
+    <main>
+
+
+        <!-- ========================================
+                    PAGE HEADER
+        ========================================= -->
+
+        <section
+            aria-labelledby="tracking-heading">
+
+
+            <h1 id="tracking-heading">
+
+                Track Your Order
+
+            </h1>
+
+
+            <p>
+
+                Follow your food order in real time.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    ORDER INFORMATION
+        ========================================= -->
+
+        <section
+            aria-labelledby="order-information-heading">
+
+
+            <h2 id="order-information-heading">
+
+                Order Information
+
+            </h2>
+
+
+            <dl>
+
+
+                <dt>
+                    Order ID
+                </dt>
+
+                <dd>
+
+                    <data value="FG12345">
+
+                        #FG12345
+
+                    </data>
+
+                </dd>
+
+
+
+                <dt>
+                    Restaurant
+                </dt>
+
+                <dd>
+                    Pizza Palace
+                </dd>
+
+
+
+                <dt>
+                    Order Placed
+                </dt>
+
+                <dd>
+
+                    <time datetime="2026-09-01T14:30">
+
+                        September 1, 2026 at 2:30 PM
+
+                    </time>
+
+                </dd>
+
+
+            </dl>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    CURRENT STATUS
+        ========================================= -->
+
+        <section
+            aria-labelledby="current-status-heading">
+
+
+            <h2 id="current-status-heading">
+
+                Current Order Status
+
+            </h2>
+
+
+            <p
+                aria-live="polite">
+
+
+                Your order is currently:
+
+                <strong>
+
+                    Out for Delivery
+
+                </strong>
+
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    ORDER COMPLETION METER
+        ========================================= -->
+
+        <section
+            aria-labelledby="completion-heading">
+
+
+            <h2 id="completion-heading">
+
+                Order Completion
+
+            </h2>
+
+
+            <label for="order-meter">
+
+                Delivery Progress
+
+            </label>
+
+
+            <br>
+
+
+            <meter
+                id="order-meter"
+                value="75"
+                min="0"
+                max="100"
+                low="30"
+                high="70"
+                optimum="100">
+
+                75%
+
+            </meter>
+
+
+            <p>
+
+                Your order is approximately
+                75% complete.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    ORDER TRACKING TIMELINE
+        ========================================= -->
+
+        <section
+            aria-labelledby="timeline-heading">
+
+
+            <h2 id="timeline-heading">
+
+                Order Timeline
+
+            </h2>
+
+
+            <ol>
+
+
+                <!-- STEP 1 -->
+
+                <li
+                    data-step="1"
+                    data-status="completed">
+
+
+                    <strong>
+
+                        ✓ Order Confirmed
+
+                    </strong>
+
+
+                    <br>
+
+
+                    <time datetime="2026-09-01T14:30">
+
+                        2:30 PM
+
+                    </time>
+
+
+                    <p>
+
+                        Your order was successfully placed.
+
+                    </p>
+
+
+                </li>
+
+
+
+                <!-- STEP 2 -->
+
+                <li
+                    data-step="2"
+                    data-status="completed">
+
+
+                    <strong>
+
+                        ✓ Restaurant Accepted Your Order
+
+                    </strong>
+
+
+                    <br>
+
+
+                    <time datetime="2026-09-01T14:32">
+
+                        2:32 PM
+
+                    </time>
+
+
+                    <p>
+
+                        The restaurant has accepted
+                        your order.
+
+                    </p>
+
+
+                </li>
+
+
+
+                <!-- STEP 3 -->
+
+                <li
+                    data-step="3"
+                    data-status="completed">
+
+
+                    <strong>
+
+                        ✓ Food Is Being Prepared
+
+                    </strong>
+
+
+                    <br>
+
+
+                    <time datetime="2026-09-01T14:40">
+
+                        2:40 PM
+
+                    </time>
+
+
+                    <p>
+
+                        The restaurant is preparing
+                        your food.
+
+                    </p>
+
+
+                </li>
+
+
+
+                <!-- STEP 4 - CURRENT -->
+
+                <li
+                    data-step="4"
+                    data-status="current"
+                    aria-current="step">
+
+
+                    <strong>
+
+                        → Out for Delivery
+
+                    </strong>
+
+
+                    <br>
+
+
+                    <time datetime="2026-09-01T15:00">
+
+                        3:00 PM
+
+                    </time>
+
+
+                    <p>
+
+                        Your food is on the way.
+
+                    </p>
+
+
+                </li>
+
+
+
+                <!-- STEP 5 - PENDING -->
+
+                <li
+                    data-step="5"
+                    data-status="pending">
+
+
+                    <strong>
+
+                        ○ Delivered
+
+                    </strong>
+
+
+                    <br>
+
+
+                    <time datetime="2026-09-01T15:20">
+
+                        Expected at 3:20 PM
+
+                    </time>
+
+
+                    <p>
+
+                        Your order will be delivered soon.
+
+                    </p>
+
+
+                </li>
+
+
+            </ol>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    ESTIMATED DELIVERY
+        ========================================= -->
+
+        <section
+            aria-labelledby="delivery-estimate-heading">
+
+
+            <h2 id="delivery-estimate-heading">
+
+                Estimated Delivery
+
+            </h2>
+
+
+            <p>
+
+                Your food is expected to arrive in:
+
+                <strong>
+
+                    <time datetime="PT20M">
+
+                        20 minutes
+
+                    </time>
+
+                </strong>
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    DELIVERY PARTNER
+        ========================================= -->
+
+        <section
+            aria-labelledby="delivery-partner-heading">
+
+
+            <h2 id="delivery-partner-heading">
+
+                Delivery Partner
+
+            </h2>
+
+
+            <dl>
+
+
+                <dt>
+                    Name
+                </dt>
+
+                <dd>
+                    Rahul Kumar
+                </dd>
+
+
+
+                <dt>
+                    Contact Number
+                </dt>
+
+                <dd>
+
+                    <a href="tel:+919876543210">
+
+                        +91 98765 43210
+
+                    </a>
+
+                </dd>
+
+
+
+                <dt>
+                    Vehicle
+                </dt>
+
+                <dd>
+                    Motorcycle
+                </dd>
+
+
+            </dl>
+
+
+            <!-- Contact Button -->
+
+            <p>
+
+                <a href="tel:+919876543210">
+
+                    <button type="button">
+
+                        Contact Delivery Partner
+
+                    </button>
+
+                </a>
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    ORDER SUMMARY
+        ========================================= -->
+
+        <aside
+            aria-labelledby="order-summary-heading">
+
+
+            <h2 id="order-summary-heading">
+
+                Order Summary
+
+            </h2>
+
+
+            <table>
+
+
+                <caption>
+
+                    Ordered Food Items
+
+                </caption>
+
+
+                <thead>
+
+                    <tr>
+
+                        <th scope="col">
+                            Item
+                        </th>
+
+
+                        <th scope="col">
+                            Quantity
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <tbody>
+
+
+                    <tr>
+
+                        <td>
+                            Margherita Pizza
+                        </td>
+
+
+                        <td>
+                            1
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            Garlic Bread
+                        </td>
+
+
+                        <td>
+                            2
+                        </td>
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            Veg Burger
+                        </td>
+
+
+                        <td>
+                            1
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+
+            <p>
+
+                Total Paid:
+
+                <strong>
+
+                    <data value="836">
+
+                        ₹836
+
+                    </data>
+
+                </strong>
+
+            </p>
+
+
+        </aside>
+
+
+
+        <!-- ========================================
+                    HELP SECTION
+        ========================================= -->
+
+        <section
+            aria-labelledby="help-heading">
+
+
+            <h2 id="help-heading">
+
+                Need Help?
+
+            </h2>
+
+
+            <details>
+
+
+                <summary>
+
+                    My order is delayed
+
+                </summary>
+
+
+                <p>
+
+                    Delivery times may change due to
+                    traffic, weather, or restaurant delays.
+
+                </p>
+
+
+            </details>
+
+
+
+            <details>
+
+
+                <summary>
+
+                    I want to cancel my order
+
+                </summary>
+
+
+                <p>
+
+                    Please contact FoodGo support to check
+                    whether your order can still be cancelled.
+
+                </p>
+
+
+            </details>
+
+
+            <p>
+
+                <a href="mailto:support@foodgo.com">
+
+                    Contact FoodGo Support
+
+                </a>
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    BACK TO HOME
+        ========================================= -->
+
+        <section
+            aria-label="Navigation actions">
+
+
+            <p>
+
+                <a href="index.html">
+
+                    <button type="button">
+
+                        Back to Home
+
+                    </button>
+
+                </a>
+
+            </p>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+                    FOOTER
+    ========================================= -->
+
+    <footer>
+
+
+        <section>
+
+            <h2>
+                FoodGo
+            </h2>
+
+
+            <p>
+
+                Delivering happiness, one meal at a time.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- Footer Navigation -->
+
+        <nav>
+
+
+            <ul>
+
+
+                <li>
+
+                    <a href="#">
+                        About Us
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+                        Contact Us
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+
+
+
+        <p>
+
+            &copy; 2026 FoodGo.
+            All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+</html>
+```

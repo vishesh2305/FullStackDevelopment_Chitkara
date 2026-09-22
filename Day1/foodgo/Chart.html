@@ -1,0 +1,672 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive Website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser Tab Title -->
+    <title>Cart | FoodGo</title>
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+                    HEADER
+    ========================================= -->
+
+    <header>
+
+        <nav>
+
+
+            <!-- Website Logo -->
+
+            <h2>
+
+                <a href="index.html">
+                    FoodGo
+                </a>
+
+            </h2>
+
+
+
+            <!-- Main Navigation -->
+
+            <ul>
+
+                <li>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="restaurants.html">
+                        Restaurants
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="menu.html">
+                        Menu
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="cart.html">
+                        Cart
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+
+            <!-- Login -->
+
+            <a href="login.html">
+                Login
+            </a>
+
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ========================================
+                    MAIN CONTENT
+    ========================================= -->
+
+    <main>
+
+
+        <!-- ========================================
+                    PAGE HEADER
+        ========================================= -->
+
+        <section>
+
+            <h1>
+                Your Cart
+            </h1>
+
+            <p>
+                Review your selected food items before checkout.
+            </p>
+
+        </section>
+
+
+
+        <!-- ========================================
+                    CART TABLE
+        ========================================= -->
+
+        <section>
+
+
+            <table>
+
+
+                <!-- Table Title -->
+
+                <caption>
+                    Your Selected Food Items
+                </caption>
+
+
+
+                <!-- ========================================
+                        TABLE HEADER
+                ========================================= -->
+
+                <thead>
+
+                    <tr>
+
+                        <th scope="col">
+                            Item
+                        </th>
+
+
+                        <th scope="col">
+                            Price
+                        </th>
+
+
+                        <th scope="col">
+                            Quantity
+                        </th>
+
+
+                        <th scope="col">
+                            Total
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <!-- ========================================
+                        TABLE BODY
+                ========================================= -->
+
+                <tbody>
+
+
+                    <!-- CART ITEM 1 -->
+
+                    <tr>
+
+
+                        <!-- Food Name -->
+
+                        <td>
+
+                            <strong>
+                                Margherita Pizza
+                            </strong>
+
+                            <br>
+
+                            <small>
+                                Classic pizza with mozzarella cheese
+                            </small>
+
+                        </td>
+
+
+
+                        <!-- Price -->
+
+                        <td>
+
+                            <data value="299">
+                                ₹299
+                            </data>
+
+                        </td>
+
+
+
+                        <!-- Quantity -->
+
+                        <td>
+
+
+                            <label for="pizza-quantity">
+                                Quantity
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="pizza-quantity"
+                                name="pizza-quantity"
+                                value="1"
+                                min="1"
+                                max="10">
+
+
+                        </td>
+
+
+
+                        <!-- Total -->
+
+                        <td>
+
+                            <data value="299">
+                                ₹299
+                            </data>
+
+                        </td>
+
+
+                    </tr>
+
+
+
+                    <!-- CART ITEM 2 -->
+
+                    <tr>
+
+
+                        <!-- Food Name -->
+
+                        <td>
+
+                            <strong>
+                                Garlic Bread
+                            </strong>
+
+                            <br>
+
+                            <small>
+                                Fresh bread with garlic butter
+                            </small>
+
+                        </td>
+
+
+
+                        <!-- Price -->
+
+                        <td>
+
+                            <data value="149">
+                                ₹149
+                            </data>
+
+                        </td>
+
+
+
+                        <!-- Quantity -->
+
+                        <td>
+
+
+                            <label for="garlic-bread-quantity">
+                                Quantity
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="garlic-bread-quantity"
+                                name="garlic-bread-quantity"
+                                value="2"
+                                min="1"
+                                max="10">
+
+
+                        </td>
+
+
+
+                        <!-- Total -->
+
+                        <td>
+
+                            <data value="298">
+                                ₹298
+                            </data>
+
+                        </td>
+
+
+                    </tr>
+
+
+
+                    <!-- CART ITEM 3 -->
+
+                    <tr>
+
+
+                        <!-- Food Name -->
+
+                        <td>
+
+                            <strong>
+                                Veg Burger
+                            </strong>
+
+                            <br>
+
+                            <small>
+                                Fresh vegetable patty with sauce
+                            </small>
+
+                        </td>
+
+
+
+                        <!-- Price -->
+
+                        <td>
+
+                            <data value="199">
+                                ₹199
+                            </data>
+
+                        </td>
+
+
+
+                        <!-- Quantity -->
+
+                        <td>
+
+
+                            <label for="burger-quantity">
+                                Quantity
+                            </label>
+
+
+                            <input
+                                type="number"
+                                id="burger-quantity"
+                                name="burger-quantity"
+                                value="1"
+                                min="1"
+                                max="10">
+
+
+                        </td>
+
+
+
+                        <!-- Total -->
+
+                        <td>
+
+                            <data value="199">
+                                ₹199
+                            </data>
+
+                        </td>
+
+
+                    </tr>
+
+
+                </tbody>
+
+
+
+                <!-- ========================================
+                        TABLE FOOTER
+                ========================================= -->
+
+                <tfoot>
+
+
+                    <!-- Subtotal -->
+
+                    <tr>
+
+                        <th
+                            scope="row"
+                            colspan="3">
+
+                            Subtotal
+
+                        </th>
+
+
+                        <td>
+
+                            <data value="796">
+                                ₹796
+                            </data>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- Delivery Fee -->
+
+                    <tr>
+
+                        <th
+                            scope="row"
+                            colspan="3">
+
+                            Delivery Fee
+
+                        </th>
+
+
+                        <td>
+
+                            <data value="40">
+                                ₹40
+                            </data>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- Grand Total -->
+
+                    <tr>
+
+                        <th
+                            scope="row"
+                            colspan="3">
+
+                            Total
+
+                        </th>
+
+
+                        <td>
+
+                            <strong>
+
+                                <data value="836">
+                                    ₹836
+                                </data>
+
+                            </strong>
+
+                        </td>
+
+                    </tr>
+
+
+                </tfoot>
+
+
+            </table>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    CART ACTIONS
+        ========================================= -->
+
+        <section>
+
+
+            <!-- Continue Shopping -->
+
+            <a href="menu.html">
+
+                <button type="button">
+                    Continue Shopping
+                </button>
+
+            </a>
+
+
+
+            <!-- Proceed To Checkout -->
+
+            <a href="checkout.html">
+
+                <button type="button">
+                    Proceed to Checkout
+                </button>
+
+            </a>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    CART INFORMATION
+        ========================================= -->
+
+        <aside>
+
+
+            <h2>
+                Order Summary
+            </h2>
+
+
+            <dl>
+
+
+                <dt>
+                    Total Items
+                </dt>
+
+                <dd>
+                    4 Items
+                </dd>
+
+
+
+                <dt>
+                    Restaurant
+                </dt>
+
+                <dd>
+                    Pizza Palace
+                </dd>
+
+
+
+                <dt>
+                    Estimated Delivery Time
+                </dt>
+
+                <dd>
+                    30 - 40 minutes
+                </dd>
+
+
+            </dl>
+
+
+            <details>
+
+                <summary>
+                    Delivery Information
+                </summary>
+
+                <p>
+                    Delivery charges may vary depending
+                    on your location and distance from
+                    the restaurant.
+                </p>
+
+            </details>
+
+
+        </aside>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+                    FOOTER
+    ========================================= -->
+
+    <footer>
+
+
+        <section>
+
+            <h2>
+                FoodGo
+            </h2>
+
+            <p>
+                Delivering happiness, one meal at a time.
+            </p>
+
+        </section>
+
+
+
+        <!-- Footer Navigation -->
+
+        <nav>
+
+            <ul>
+
+                <li>
+
+                    <a href="#">
+                        About Us
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+                        Contact Us
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <p>
+            &copy; 2026 FoodGo. All Rights Reserved.
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+</html>
+```

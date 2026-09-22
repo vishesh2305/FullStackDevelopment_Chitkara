@@ -1,0 +1,760 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character Encoding -->
+
+    <meta charset="UTF-8">
+
+
+    <!-- Responsive Website -->
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Browser Tab Title -->
+
+    <title>Order Successful | FoodGo</title>
+
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+                    HEADER
+    ========================================= -->
+
+    <header>
+
+        <nav>
+
+
+            <!-- Website Logo -->
+
+            <h2>
+
+                <a href="index.html">
+                    FoodGo
+                </a>
+
+            </h2>
+
+
+            <!-- Main Navigation -->
+
+            <ul>
+
+                <li>
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="restaurants.html">
+                        Restaurants
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="menu.html">
+                        Menu
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="cart.html">
+                        Cart
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- Login -->
+
+            <a href="login.html">
+                Login
+            </a>
+
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ========================================
+                    MAIN CONTENT
+    ========================================= -->
+
+    <main>
+
+
+        <!-- ========================================
+                    SUCCESS MESSAGE
+        ========================================= -->
+
+        <section
+            aria-label="Order success message">
+
+
+            <h1>
+                ✓ Order Placed Successfully!
+            </h1>
+
+
+            <p>
+
+                Thank you for ordering with
+
+                <strong>
+                    FoodGo
+                </strong>.
+
+            </p>
+
+
+            <p>
+
+                Your order has been
+
+                <mark>
+                    confirmed
+                </mark>.
+
+            </p>
+
+
+            <!-- Order ID -->
+
+            <p>
+
+                Your Order ID is:
+
+                <strong>
+
+                    <output>
+                        #FG12345
+                    </output>
+
+                </strong>
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    ORDER STATUS
+        ========================================= -->
+
+        <section
+            aria-labelledby="order-status-heading">
+
+
+            <h2
+                id="order-status-heading">
+
+                Order Status
+
+            </h2>
+
+
+            <p>
+
+                Current Status:
+
+                <strong>
+
+                    <mark>
+                        Order Confirmed
+                    </mark>
+
+                </strong>
+
+            </p>
+
+
+
+            <!-- Order Progress -->
+
+            <label for="order-progress">
+
+                Order Progress
+
+            </label>
+
+
+            <br>
+
+
+            <progress
+                id="order-progress"
+                value="1"
+                max="4">
+
+                1 out of 4
+
+            </progress>
+
+
+            <p>
+
+                Step 1 of 4 Completed
+
+            </p>
+
+
+            <!-- Order Status Steps -->
+
+            <ol>
+
+
+                <li>
+
+                    <strong>
+                        Order Confirmed
+                    </strong>
+
+                </li>
+
+
+                <li>
+                    Restaurant Preparing Your Food
+                </li>
+
+
+                <li>
+                    Out for Delivery
+                </li>
+
+
+                <li>
+                    Delivered
+                </li>
+
+
+            </ol>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    ORDER DETAILS
+        ========================================= -->
+
+        <section
+            aria-labelledby="order-details-heading">
+
+
+            <h2
+                id="order-details-heading">
+
+                Order Details
+
+            </h2>
+
+
+            <!-- Description List -->
+
+            <dl>
+
+
+                <!-- Order ID -->
+
+                <dt>
+                    Order ID
+                </dt>
+
+                <dd>
+                    #FG12345
+                </dd>
+
+
+
+                <!-- Restaurant -->
+
+                <dt>
+                    Restaurant
+                </dt>
+
+                <dd>
+                    Pizza Palace
+                </dd>
+
+
+
+                <!-- Number of Items -->
+
+                <dt>
+                    Total Items
+                </dt>
+
+                <dd>
+                    4 Items
+                </dd>
+
+
+
+                <!-- Order Date -->
+
+                <dt>
+                    Order Date
+                </dt>
+
+                <dd>
+
+                    <time datetime="2026-09-01T14:30">
+
+                        September 1, 2026
+                        at 2:30 PM
+
+                    </time>
+
+                </dd>
+
+
+
+                <!-- Estimated Delivery -->
+
+                <dt>
+                    Estimated Delivery
+
+                </dt>
+
+                <dd>
+
+                    <time datetime="PT40M">
+
+                        30 - 40 minutes
+
+                    </time>
+
+                </dd>
+
+
+            </dl>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    PAYMENT SUMMARY
+        ========================================= -->
+
+        <section
+            aria-labelledby="payment-summary-heading">
+
+
+            <h2
+                id="payment-summary-heading">
+
+                Payment Summary
+
+            </h2>
+
+
+            <table>
+
+
+                <caption>
+                    Order Payment Details
+                </caption>
+
+
+                <thead>
+
+                    <tr>
+
+                        <th scope="col">
+                            Description
+                        </th>
+
+
+                        <th scope="col">
+                            Amount
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+
+                <tbody>
+
+
+                    <!-- Original Price -->
+
+                    <tr>
+
+                        <td>
+                            Original Order Amount
+                        </td>
+
+
+                        <td>
+
+                            <del>
+                                ₹999
+                            </del>
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- Discount -->
+
+                    <tr>
+
+                        <td>
+                            Discount Applied
+                        </td>
+
+
+                        <td>
+
+                            -₹163
+
+                        </td>
+
+                    </tr>
+
+
+
+                    <!-- Final Amount -->
+
+                    <tr>
+
+                        <th scope="row">
+
+                            Final Amount Paid
+
+                        </th>
+
+
+                        <td>
+
+                            <strong>
+
+                                <ins>
+                                    ₹836
+                                </ins>
+
+                            </strong>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+
+            <!-- Payment Status -->
+
+            <p>
+
+                Payment Status:
+
+                <mark>
+                    Payment Successful
+                </mark>
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    DELIVERY INFORMATION
+        ========================================= -->
+
+        <section
+            aria-labelledby="delivery-heading">
+
+
+            <h2
+                id="delivery-heading">
+
+                Delivery Information
+
+            </h2>
+
+
+            <address>
+
+                Mansi Sharma
+
+                <br>
+
+                House No. 123,
+                Model Town
+
+                <br>
+
+                Chandigarh, India
+
+            </address>
+
+
+            <p>
+
+                Please keep your phone available
+                for delivery updates.
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    NEXT ACTIONS
+        ========================================= -->
+
+        <section
+            aria-label="Order actions">
+
+
+            <h2>
+                What's Next?
+            </h2>
+
+
+            <!-- Track Order -->
+
+            <p>
+
+                <a href="order-tracking.html">
+
+                    <button type="button">
+
+                        Track Your Order
+
+                    </button>
+
+                </a>
+
+            </p>
+
+
+            <!-- Home -->
+
+            <p>
+
+                <a href="index.html">
+
+                    <button type="button">
+
+                        Back to Home
+
+                    </button>
+
+                </a>
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- ========================================
+                    HELP INFORMATION
+        ========================================= -->
+
+        <aside>
+
+
+            <h2>
+                Need Help?
+            </h2>
+
+
+            <p>
+
+                If you have any questions about
+                your order, contact FoodGo support.
+
+            </p>
+
+
+            <p>
+
+                <a href="tel:+911234567890">
+
+                    Call Support
+
+                </a>
+
+            </p>
+
+
+            <p>
+
+                <a href="mailto:support@foodgo.com">
+
+                    Email Support
+
+                </a>
+
+            </p>
+
+
+            <details>
+
+
+                <summary>
+
+                    What happens next?
+
+                </summary>
+
+
+                <ol>
+
+                    <li>
+                        The restaurant receives your order.
+                    </li>
+
+
+                    <li>
+                        Your food will be prepared.
+                    </li>
+
+
+                    <li>
+                        A delivery partner will pick up your order.
+                    </li>
+
+
+                    <li>
+                        Your food will be delivered to your address.
+                    </li>
+
+                </ol>
+
+
+            </details>
+
+
+        </aside>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+                    FOOTER
+    ========================================= -->
+
+    <footer>
+
+
+        <section>
+
+            <h2>
+                FoodGo
+            </h2>
+
+
+            <p>
+                Delivering happiness, one meal at a time.
+            </p>
+
+        </section>
+
+
+
+        <!-- Footer Navigation -->
+
+        <nav>
+
+
+            <ul>
+
+
+                <li>
+
+                    <a href="#">
+                        About Us
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+                        Contact Us
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+
+        </nav>
+
+
+
+        <p>
+
+            &copy; 2026 FoodGo.
+            All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+</html>
+```
